@@ -1,0 +1,19 @@
+{% extends 'p1/base.html' %}
+
+
+{% block main %}
+    {% for question in object_list %}
+
+    <article>
+        <h2>
+            {{question.Question_Text}}
+{#            <div>{{Message.author}}</div>#}
+{#            <div>{{Message.publish}}</div>#}
+{#            <p>{{Message.content}}</p>#}
+        </h2>
+    </article>
+
+    {% empty %}
+
+    {% endfor %}
+{% endblock %}
